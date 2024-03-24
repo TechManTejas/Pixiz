@@ -3,7 +3,7 @@
 // SignUpFrom.tsx
 import React, { useState } from 'react';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Checkbox, Form, Input, Modal } from 'antd';
+import { Button,  Form, Input, Modal } from 'antd';
 
 interface SignUpFormProps {
   visible: boolean;

@@ -1,14 +1,14 @@
 
 // Navbar.tsx
 import React, { useState } from "react";
-import { Menu, Modal } from "antd";
+import { Menu } from "antd";
 import {
   HomeFilled,
   UserOutlined,
   CloudUploadOutlined,
   DownloadOutlined,
 } from "@ant-design/icons";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SignInForm from "./SignInForm";
 import SignUpForm from "./SignUpForm";
 
@@ -23,7 +23,7 @@ export const Navbar = ({
   const [signUpVisible, setSignUpVisible] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false); // State to track user login status
   const [userName, setUserName] = useState(""); // State to store user name
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   // Function to handle user login
   const handleLogin = (username: string) => {
     setUserName(username);
@@ -40,11 +40,11 @@ export const Navbar = ({
     setSignInVisible(true);
   };
 
-  const handleLoginSuccess = () => {
-    // Redirect logic after successful login
-    // For example, redirect to the previous location
-    navigate(-1);
-  };
+  // const handleLoginSuccess = () => {
+  //   // Redirect logic after successful login
+  //   // For example, redirect to the previous location
+  //   navigate(-1);
+  // };
 
   const handleSignUp = () => {
     setSignUpVisible(true);

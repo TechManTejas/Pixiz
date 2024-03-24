@@ -18,9 +18,9 @@ export function Hue({ angle, image, setImage }: IHue): string {
     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     const data = imageData.data;
 
-    const angleInRadians = (angle * Math.PI) / 180;
-    const cosAngle = Math.cos(angleInRadians);
-    const sinAngle = Math.sin(angleInRadians);
+    // const angleInRadians = (angle * Math.PI) / 180;
+    // const cosAngle = Math.cos(angleInRadians);
+    // const sinAngle = Math.sin(angleInRadians);
 
     for (let i = 0; i < data.length; i += 4) {
       const red = data[i];
